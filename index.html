@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/modal.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>WTF Movies</title>
+</head>
+<body>
+    <section class="nav-main-container">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <h1>WTF MOVIES</h1>
+                <i class="icon-pacman icons"></i>
+            </div>
+            <div class="menu-container">
+                <ul>
+                    <li>
+                        <i class="icon-home3 icons"></i>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <i class="icon-plus icons"></i> 
+                        <span>Mi lista</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="buscador-container">
+                <form action="" class="buscador" id="buscador">
+                    <input type="text" placeholder="Buscar pelicula" name="name" required>
+                    <button type="submit">
+                        <i class="icon-search"></i>
+                    </button> 
+                </form>
+            </div>
+            <div class="perfil-container">
+                <img src="imagenes/profile.jpg" alt="">
+                <p>Pedro Wtf</p>
+            </div>
+        </nav>
+    </section>
+    <section class="movies-main-container">
+        <div class="kaka" id="kaka">
+            <div class="busqueda-main-container"            id="busquedaOn"></div>
+        </div>
+        </div>
+        <div class="movies-container">
+            <h1>Acción</h1>
+            <div class="movies-categorie-container" id="action"></div>
+            <h1>Terror</h1>
+            <div class="movies-categorie-container" id="horror"></div>
+            <h1>Comedia</h1>
+            <div class="movies-categorie-container" id="comedy"></div>
+            
+            <div class="overlay" id="overlay">
+            </div>    
+        </div>
+        <div class="modal" id="modal">
+            <h1>Título de pelicula</h1>
+            <div class="modal-content">
+              <img src="" alt="" width="170" height="256">
+              <p>.</p>
+            </div>
+            <div class="modal-buttons">
+              <button class="modal-btn primary" id="hide-modal">Volver</button>
+            </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
