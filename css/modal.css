@@ -43,7 +43,6 @@
   bottom: 0;
   margin: auto;
   height: 500px;
-  overflow: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -53,6 +52,7 @@
 }
 .modal-content {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .modal-content img {
@@ -64,6 +64,8 @@
 .modal-content p {
   align-self: center;
   font-size: 15px;
+  overflow: auto;
+  height: 350px;
 
 }
 /*@keyframes animationIn {*/
@@ -100,3 +102,29 @@
     transform: translateY(-3000px);
   }
 }
+@media (max-width:425px){
+  .modal{
+    width: 350px;
+    height: 350px;
+    padding: 1em;
+  }
+  .modal-content{
+    display: block;
+  }
+  .modal-content img {
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+    margin-right: 0;
+  }
+  .modal-content p {
+    font-size: 10px;
+    overflow: auto;
+    height: 100px;
+  }
+  .modal-btn{
+    padding: .3em .4em .4em;
+  }
+
+}
+
