@@ -68,6 +68,13 @@
   height: 350px;
 
 }
+.modal-content p::-webkit-scrollbar {
+  width: 5px;
+}
+.modal-content p::-webkit-scrollbar-thumb {
+  background: #090b13;
+  border-radius: 4px;
+}
 /*@keyframes animationIn {*/
 @keyframes modalIn {
   0% {
